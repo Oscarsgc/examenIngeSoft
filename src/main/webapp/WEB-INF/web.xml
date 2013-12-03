@@ -1,0 +1,11 @@
+<web-app>
+	<servlet>
+		<servlet-name>BisiestoServlet</servlet-name>
+		<servlet-class>BisiestoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BisiestoServlet</servlet-name>
+		<url-pattern>/BisiestoServlet</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
