@@ -29,4 +29,22 @@ public class TestAnio {
 		anio = new Anio(1920);
 		assertEquals(true, anio.esBisiesto());
 	}
+
+	@Test
+	public void testSiAnioNoEsbisiesto() {
+		anio = new Anio(1921);
+		assertEquals(false, anio.esBisiesto());
+	}
+
+	@Test
+	public void testSiAnioEsbisiestoCompleto() {
+		anio = new Anio(2000);
+		assertEquals(true, anio.esBisiesto());
+	}
+
+	@Test
+	public void testSiAnioNoEsbisiestoCompleto() {
+		anio = new Anio(2001);
+		assertEquals(false, anio.esBisiesto());
+	}
 }

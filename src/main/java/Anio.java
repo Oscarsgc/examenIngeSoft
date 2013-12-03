@@ -19,7 +19,8 @@ public class Anio {
 
 	public boolean esBisiesto() {
 		boolean res = false;
-		if (this.anio % 4 == 0 && this.anio % 100 != 0) {
+		if (this.anio % 4 == 0
+				&& (this.anio % 100 != 0 || this.anio % 400 == 0)) {
 			res = true;
 		} else {
 			res = false;
